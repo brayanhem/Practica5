@@ -5,6 +5,7 @@ public class Carta {
     public enum Figura{
         CORAZONES,DIAMANTES,TREBOLES,ESPADAS
     }
+
     private int valor;
     private Figura tipo;
 

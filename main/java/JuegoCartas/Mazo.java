@@ -2,7 +2,6 @@ package JuegoCartas;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class Mazo {
     private ArrayList<Carta> cartas;
