@@ -42,13 +42,11 @@ public class Juego {
             System.out.println(jugadores.get(i).obtenerInformacion());
         }
 
-            // Desplegar el estado del mazo[cite: 1]
             System.out.println("\nESTADO DEL MAZO");
             System.out.println("Cartas restantes en el mazo: " + miMazo.obtenerCartasRestantes());
             System.out.println("Primeras 3 cartas actuales del mazo:");
             miMazo.mostrarPrimerasCartas(3);
 
-            // Gestionar la pila de cartas no repartidas (regresar cartas)[cite: 1]
         if (jugadores.size() > 0) {
             System.out.println("\nEl primer jugador devuelva 2 cartas al mazo.");
             ArrayList<Carta> cartasDevueltas = jugadores.get(0).deshacerseDeCartas(2);
