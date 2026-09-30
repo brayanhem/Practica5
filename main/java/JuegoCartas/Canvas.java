@@ -193,6 +193,17 @@ public class Canvas
         graphic.setColor(original);
     }
 
+    public void drawText(String text, int x, int y, String colorStr) {
+        if (colorStr.equalsIgnoreCase("red")) {
+            graphic.setColor(java.awt.Color.RED);
+        } else {
+            graphic.setColor(java.awt.Color.BLACK);
+        }
+        graphic.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 14));
+        graphic.drawString(text, x, y);
+
+        redraw();
+    }
 
     /************************************************************************
      * Inner class CanvasPane - the actual canvas component contained in the

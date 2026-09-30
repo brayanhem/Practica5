@@ -37,6 +37,11 @@ public class Square
         isVisible = true;
         draw();
     }
+
+    public void setPosition(int x, int y) {
+        xPosition = x;
+        yPosition = y;
+    }
     
     /**
      * Make this square invisible. If it was already invisible, do nothing.
